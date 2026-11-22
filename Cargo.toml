@@ -1,0 +1,19 @@
+[package]
+name = "viveka"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "A signed memory of what a system tried and what happened, and of the rule changes a person approved"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/maurathat/viveka"
+readme = "README.md"
+keywords = ["provenance", "governance", "content-addressing", "audit"]
+categories = ["cryptography", "command-line-utilities"]
+
+[dependencies]
+ed25519-dalek = "2"
+getrandom = "0.2"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+unicode-normalization = "0.1.26"
+uor-addr = "0.4"
